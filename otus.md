@@ -28,7 +28,7 @@
 
 
 ### 1. Create VLANs and Assign Switch Ports
-Switch1, commands line:
+#### Switch1, commands line:
 <br> interface Ethernet0/0
       
       switchport trunk encapsulation dot1q
@@ -54,4 +54,4 @@ Switch1, commands line:
       switchport mode access
 
 
-Switch2, commands line:
+#### Switch2, commands line:
