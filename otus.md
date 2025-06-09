@@ -27,7 +27,7 @@
 |Vlan8|Naitive|N/A|
 
 
-## 1. Create VLANs and Assign Switch Ports
+### 1. Create VLANs and Assign Switch Ports
 Switch1, commands line:
 
 Switch2, commands line:
