@@ -6,3 +6,5 @@
 поиск и устранение неполадок в сетях VLAN.
 
 ![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
+
+Addressing Table 
