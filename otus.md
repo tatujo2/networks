@@ -25,3 +25,9 @@
 |Vlan4|Operations|switch2 E0/2|
 |Vlan7|ParkingLot|switch1: E0/3, E0/4; switch2: E0/3, E0/4|
 |Vlan8|Naitive|N/A|
+
+
+## 1. Create VLANs and Assign Switch Ports
+Switch1, commands line:
+
+Switch2, commands line:
