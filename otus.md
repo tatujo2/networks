@@ -114,6 +114,10 @@ interface Ethernet0/1.4
 
       encapsulation dot1Q 4
 
+### 3. Verify Inter-VLAN Routing is Working 
+![ Ping from PC1 to its default gateway ]()
+![ Ping from PC1 to PC2 ]()
+![ Ping from PC1 to switch2 ]()
 
 
 
