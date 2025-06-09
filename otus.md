@@ -23,7 +23,7 @@
 |-----|------|-------------------|
 |Vlan3|Management|switch1: vlan3 <br> switch1: E0/2 <br> switch2: vlan3|
 |Vlan4|Operations|switch2 E0/2|
-|Vlan7|ParkingLot|switch1: E0/3 <br> switch1: E0/4 <br> switch2: E0/3 <br> switch2: E0/4|
+|Vlan7|ParkingLot|switch1: E0/3 <br> switch2: E0/3 |
 |Vlan8|Naitive|N/A|
 
 
@@ -53,6 +53,13 @@
   
       switchport mode access
 
+<br> interface Ethernet0/3
+
+      switchport access vlan 7
+      
+      shutdown
+
+
 
 #### Switch2, commands line:
 <br> interface Ethernet0/0
@@ -70,4 +77,16 @@
        switchport nonegotiate
        
        switchport mode access
+
+<br> interface Ethernet0/3
+
+      switchport access vlan 7
+      
+      shutdown
+
+<br> interface Ethernet0/1
+
+      switchport access vlan 7
+      
+      shutdown
 
