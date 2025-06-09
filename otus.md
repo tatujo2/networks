@@ -1,9 +1,5 @@
 # Задание № 1
-Цели занятия
-рассмотреть протоколы VLAN, DTP;
-исследовать расширенные виртуальные локальные сети;
-рассмотреть технологии маршрутизации между VLAN;
-поиск и устранение неполадок в сетях VLAN.
+## Lab - Configure Router-on-a-Stick Inter-VLAN Routing 
 
 ![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
 
