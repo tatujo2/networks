@@ -31,8 +31,8 @@
 Switch1, commands line:
 <br> interface Ethernet0/0
 >  <br> switchport trunk encapsulation dot1q
-  <br>  switchport nonegotiate
-  <br>  switchport mode trunk
+>  <br>  switchport nonegotiate
+>  <br>  switchport mode trunk
 !
 <br> interface Ethernet0/1
  <br> switchport trunk encapsulation dot1q
