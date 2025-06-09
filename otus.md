@@ -28,14 +28,8 @@
 
 
 ### 1. Create VLANs and Assign Switch Ports
+
 #### Switch1, commands line:
-<br> interface Ethernet0/0
-      
-      switchport trunk encapsulation dot1q
-      
-      switchport nonegotiate
-      
-      switchport mode trunk
 !
 <br> interface Ethernet0/1
 
@@ -62,13 +56,6 @@
 
 
 #### Switch2, commands line:
-<br> interface Ethernet0/0
-
-       switchport trunk encapsulation dot1q
-       
-       switchport nonegotiate
-       
-       switchport mode trunk
 !
 <br> interface Ethernet0/2
 
@@ -90,3 +77,24 @@
       
       shutdown
 
+### 2. Configure an 802.1Q Trunk Between the Switches
+
+#### Switch1, commands line:
+!
+<br> interface Ethernet0/0
+      
+      switchport trunk encapsulation dot1q
+      
+      switchport nonegotiate
+      
+      switchport mode trunk
+
+#### Switch2, commands line:
+!
+<br> interface Ethernet0/0
+
+       switchport trunk encapsulation dot1q
+       
+       switchport nonegotiate
+       
+       switchport mode trunk
