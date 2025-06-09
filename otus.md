@@ -126,4 +126,4 @@ interface Ethernet0/1.4
 ![ Ping from PC1 to switch2 ](https://github.com/tatujo2/networks/blob/main/screenshots/ping_from_pc1_to_switch2.png)
 
 #### From the command prompt on PC2, issue the tracert command to the address of PC1.
-![ Trace from PC2 to PC1 ](https://github.com/tatujo2/networks/blob/main/screenshots/screenshots/tracert_from_pc1_to_pc2.png)
+![ Trace from PC2 to PC1 ](https://github.com/tatujo2/networks/blob/main/screenshots/tracert_from_pc1_to_pc2.png)
