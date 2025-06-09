@@ -38,14 +38,20 @@ Switch1, commands line:
       switchport mode trunk
 !
 <br> interface Ethernet0/1
+
       switchport trunk encapsulation dot1q
+      
       switchport nonegotiate
+      
       switchport mode trunk
-!
+      !
 <br> interface Ethernet0/2
-  <br> switchport access vlan 3
-  <br> switchport nonegotiate
-  <br> switchport mode access
+
+      switchport access vlan 3
+      
+      switchport nonegotiate
+  
+      switchport mode access
 
 
 Switch2, commands line:
