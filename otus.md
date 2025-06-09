@@ -31,14 +31,6 @@
 
 #### Switch1, commands line:
 !
-<br> interface Ethernet0/1
-
-      switchport trunk encapsulation dot1q
-      
-      switchport nonegotiate
-      
-      switchport mode trunk
-      !
 <br> interface Ethernet0/2
 
       switchport access vlan 3
@@ -98,3 +90,30 @@
        switchport nonegotiate
        
        switchport mode trunk
+
+### 3. Configure Inter-VLAN Routing on the Router 
+
+#### Switch1, commands line:
+!
+<br> interface Ethernet0/1
+
+      switchport trunk encapsulation dot1q
+      
+      switchport nonegotiate
+      
+      switchport mode trunk
+
+#### Roter1, commands line:
+
+interface Ethernet0/1.3
+
+      encapsulation dot1Q 3
+
+!
+interface Ethernet0/1.4
+
+      encapsulation dot1Q 4
+
+
+
+
