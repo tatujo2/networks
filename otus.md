@@ -9,6 +9,9 @@
 
 ## __Addressing Table__ 
 
-| Device | Interface  | IP Address  |  Subnet Mask  | Default Gateway |
-|--------|------------|-------------|---------------|-----------------|
-|router1 | E0/1.3     | 192.168.3.1 | 255.255.255.0 |       N/A       |
+| Device | Interface  | IP Address   |  Subnet Mask  | Default Gateway |
+|--------|------------|--------------|---------------|-----------------|
+|router1 | E0/1.3     | 192.168.3.1  | 255.255.255.0 |       N/A       |
+|router1 | E0/1.4     | 192.168.4.1  | 255.255.255.0 |       N/A       |
+|switch1 | Vlan 3     | 192.168.4.11 | 255.255.255.0 |       N/A       |
+|switch2 | Vlan 3     | 192.168.4.12 | 255.255.255.0 |       N/A       |
