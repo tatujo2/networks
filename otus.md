@@ -8,3 +8,7 @@
 ![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
 
 ## __Addressing Table__ 
+
+| Device | Interface  | IP Address  |  Subnet Mask  | Default Gateway |
+|--------|------------|-------------|---------------|-----------------|
+|router1 | E0/1.3     | 192.168.3.1 | 255.255.255.0 |       N/A       |
