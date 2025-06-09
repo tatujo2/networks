@@ -7,7 +7,7 @@
 
 ![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
 
-## __Addressing Table__ 
+## _Addressing Table_ 
 
 | Device | Interface  | IP Address   |  Subnet Mask  | Default Gateway |
 |--------|------------|--------------|---------------|-----------------|
@@ -17,3 +17,8 @@
 |switch2 | Vlan 3     | 192.168.3.12 | 255.255.255.0 |192.168.3.1      |
 |PC1     | NIC        | 192.168.3.3  | 255.255.255.0 |192.168.3.1      |
 |PC2     | NIC        | 192.168.4.3  | 255.255.255.0 |192.168.4.1      |
+
+ ## _VLAN Table_ 
+ |Vlan | Name | Interface Assigned|
+ |-----|------|-------------------|
+ |Vlan3|Management|switch1 vlan3 switch2 vlan3 switch1 E0/2|
