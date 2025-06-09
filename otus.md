@@ -30,7 +30,7 @@
 ### 1. Create VLANs and Assign Switch Ports
 Switch1, commands line:
 <br> interface Ethernet0/0
-  <br> ..switchport trunk encapsulation dot1q..
+  <br> .. switchport trunk encapsulation dot1q ..
   <br>  switchport nonegotiate
   <br>  switchport mode trunk
 !
