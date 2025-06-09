@@ -55,3 +55,19 @@
 
 
 #### Switch2, commands line:
+<br> interface Ethernet0/0
+
+       switchport trunk encapsulation dot1q
+       
+       switchport nonegotiate
+       
+       switchport mode trunk
+!
+<br> interface Ethernet0/2
+
+       switchport access vlan 4
+       
+       switchport nonegotiate
+       
+       switchport mode access
+
