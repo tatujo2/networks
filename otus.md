@@ -116,10 +116,13 @@ interface Ethernet0/1.4
 
 ### 3. Verify Inter-VLAN Routing is Working 
 
+#### Ping from PC1 to its default gateway
 ![ Ping from PC1 to its default gateway ](https://github.com/tatujo2/networks/blob/main/screenshots/ping_from_pc1_to_gateway.png)
 
+#### Ping from PC1 to PC2
 ![ Ping from PC1 to PC2 ](https://github.com/tatujo2/networks/blob/main/screenshots/ping_from_pc1_to_pc2.png)
 
+#### Ping from PC1 to switch2
 ![ Ping from PC1 to switch2 ](https://github.com/tatujo2/networks/blob/main/screenshots/ping_from_pc1_to_switch2.png)
 
 
