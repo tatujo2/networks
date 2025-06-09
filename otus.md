@@ -18,7 +18,10 @@
 |PC1     | NIC        | 192.168.3.3  | 255.255.255.0 |192.168.3.1      |
 |PC2     | NIC        | 192.168.4.3  | 255.255.255.0 |192.168.4.1      |
 
- ## _VLAN Table_ 
- |Vlan | Name | Interface Assigned|
- |-----|------|-------------------|
- |Vlan3|Management|switch1 vlan3 switch2 vlan3 switch1 E0/2|
+## _VLAN Table_ 
+|Vlan | Name | Interface Assigned|
+|-----|------|-------------------|
+|Vlan3|Management|switch1: vlan3, E0/2; switch2: vlan3|
+|Vlan4|Operations|switch2 E0/2|
+|Vlan7|ParkingLot|switch1: E0/3, E0/4; switch2: E0/3, E0/4|
+|Vlan8|Naitive|N/A|
