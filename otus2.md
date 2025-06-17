@@ -198,7 +198,59 @@ switch3#show spanning-tree
             Et0/3               Altn BLK 100       128.4    Shr
 
 протокол spanning-tree заменяет ранее заблокированный порт на назначенный порт и блокирует порт, который был назначенным
-портом на другом коммутаторе
+портом на другом коммутаторе потому, что он стоновиться корневым, так как уменьшается стоимость пути до корневого свича.
 
-      
+
+
+
+
+
+      switch1#sh spanning-tree
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32769
+             Address     aabb.cc00.2000
+             Cost        100
+             Port        1 (Ethernet0/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    40961  (priority 40960 sys-id-ext 1)
+             Address     aabb.cc00.1000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Et0/0               Root FWD 100       128.1    Shr
+Et0/1               Altn BLK 100       128.2    Shr
+Et0/2               Altn BLK 100       128.3    Shr
+Et0/3               Altn BLK 100       128.4    Shr
+
+!!!!
+
+switch3#sh spanning-tree
+
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32769
+             Address     aabb.cc00.2000
+             Cost        100
+             Port        1 (Ethernet0/0)
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    36865  (priority 36864 sys-id-ext 1)
+             Address     aabb.cc00.3000
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Et0/0               Root FWD 100       128.1    Shr
+Et0/1               Altn BLK 100       128.2    Shr
+Et0/2               Desg FWD 100       128.3    Shr
+Et0/3               Desg FWD 100       128.4    Shr
+
+
+
 
