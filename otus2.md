@@ -10,4 +10,4 @@
 ## Vlan table
 |Vlan|Name|Assigned Enterface|
 |-|-|-|
-|Trunk|Trunk| s1: eth0/1
+|Trunk|Trunk| s1: eth0/1 <br> s1: eth0/2 <br> s2: eth0/1 <br> s2: eth0/2 <br> s3: eth0/1 <br> s3: eth0/2 <br>| 
