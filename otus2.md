@@ -14,15 +14,15 @@
 
 ## Часть 1:	Определение корневого моста
 
-switch1#show spanning-tree
+> switch1#show spanning-tree
 
-VLAN0001
-  Spanning tree enabled protocol ieee
-  Root ID    Priority    32769
-             Address     aabb.cc00.2000
-             Cost        100
-             Port        2 (Ethernet0/1)
-             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+> VLAN0001
+>   Spanning tree enabled protocol ieee
+>   Root ID    Priority    32769
+>              Address     aabb.cc00.2000
+>              Cost        100
+>              Port        2 (Ethernet0/1)
+>              Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
 
   Bridge ID  Priority    40961  (priority 40960 sys-id-ext 1)
              Address     aabb.cc00.1000
