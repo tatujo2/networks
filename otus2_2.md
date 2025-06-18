@@ -202,7 +202,9 @@ switch3#show spanning-tree
 
 
 
+### Часть 3: Наблюдение за процессом выбора протоколом STP порта, исходя приоритетов портов.
 
+Включаем порты на всех комутаторах Et0/0 Et0/2
 
 
 switch1#sh spanning-tree
@@ -278,6 +280,8 @@ switch3#sh spanning-tree
       Et0/2               Desg FWD 100       128.3    Shr
       
       Et0/3               Desg FWD 100       128.4    Shr
+
+
 
 
 
