@@ -23,5 +23,5 @@
 |1|N/a| s2: eth0/1|
 |100|Clients|s1: eth0/1|
 |200|Management|s1: vlan200|
-|999|ParkingLot|s1: eth0/2 <br> s1: eth0/2|
+|999|ParkingLot|s1: eth0/2 <br> s1: eth0/3|
 |1000|Naitive|N/a|
