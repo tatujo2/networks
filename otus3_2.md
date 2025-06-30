@@ -5,6 +5,19 @@
 
 ## Addressing Table
 
+| Device    | Interface | IP Address		 | 
+|-----------|-----------|------------------------|
+|R1	    | Eth0/0    | 2001:db8:acad:2::1 /64 |		
+|	    |      	|	fe80::1          |		
+|	    | Eth0/1 	| 2001:db8:acad:1::1/64	 | 
+|	    |  		|  	fe80::1		 |
+|R2 	    | Eth0/0	| 2001:db8:acad:2::2/64  |
+|           |           |	fe80::2          | 
+|	    | Eth0/1	| 2001:db8:acad:3::1/64  |
+|           |           |	fe80::1          | 
+|PC1	    |NIC1 	|DHCP   		 |
+|PC2	    |NIC1       |DHCP           	 |
+
 
 # Build the Network and Configure Basic Device Settings
 
