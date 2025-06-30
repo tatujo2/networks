@@ -3,6 +3,9 @@
 
 # Topology
 
+## Addressing Table
+
+
 # Build the Network and Configure Basic Device Settings
 
 ## Router1
