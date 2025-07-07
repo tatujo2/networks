@@ -3,6 +3,8 @@
 
 # Topology
 
+![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
+
 ## Addressing Table
 
 | Device    | Interface | IP Address		 | 
