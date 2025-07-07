@@ -1,4 +1,7 @@
 # Lab - Implement DHCPv4
+
+![](https://github.com/tatujo2/networks/blob/main/screenshots/1.png)
+
 ## Addressing Table
 
 | Device    | Interface | IP Address| Subnet Mask  | Default Gateway  |
