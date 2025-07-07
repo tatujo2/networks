@@ -3,7 +3,7 @@
 
 # Topology
 
-![](https://github.com/tatujo2/networks/blob/main/screenshots/1.1.png)
+![](https://github.com/tatujo2/networks/blob/main/screenshots/1.png)
 
 ## Addressing Table
 
