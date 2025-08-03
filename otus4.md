@@ -1,4 +1,4 @@
-
+		
 # Домашнее задание  “Проектирование сети”
 
 # Цель:
@@ -179,5 +179,59 @@ Lookback 10.0.1.1-….
 | R27 	 |Lo0        | 10.2.27.1  | 255.255.255.0|       N/A      |
 | R28 	 |Lo0        | 10.2.28.1  | 255.255.255.0|       N/A      |
 | R32 	 |Lo0        | 10.1.32.1  | 255.255.255.0|       N/A      |
+
+
+## 5. Настроите сети офисов так, чтобы не возникало broadcast штормов, а использование линков было максимально оптимизировано
+
+### SW5
+		spanning-tree vlan 10 priority 28672
+		spanning-tree vlan 20 priority 24576
+### SW4
+  		spanning-tree vlan 10 priority 24576
+		spanning-tree vlan 20 priority 28672
+
+### SW3
+		VLAN0010
+		  Spanning tree enabled protocol ieee
+ 		 Root ID    Priority    24586
+      		       Address     aabb.cc00.4000
+       		      Cost        100
+         		    Port        1 (Ethernet0/0)
+         		    Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+		  Bridge ID  Priority    32778  (priority 32768 sys-id-ext 10)
+   		          Address     aabb.cc00.3000
+   		          Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+   		          Aging Time  300 sec
+
+		Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+		Et0/0               Root FWD 100       128.1    Shr
+		Et0/2               Desg FWD 100       128.3    Shr
+
+###  SW2
+
+		VLAN0020
+		  Spanning tree enabled protocol ieee
+		  Root ID    Priority    24596
+  	           Address     aabb.cc00.5000
+   	          Cost        100
+ 	            Port        1 (Ethernet0/0)
+  	           Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+		  Bridge ID  Priority    32788  (priority 32768 sys-id-ext 20)
+  	           Address     aabb.cc00.2000
+  	           Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+   	          Aging Time  300 sec
+
+		Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+		Et0/0               Root LIS 100       128.1    Shr
+		Et0/1               Altn BLK 100       128.2    Shr
+		Et0/2               Desg LIS 100       128.3    Shr
+
+
+
+
 
 
