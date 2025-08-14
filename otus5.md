@@ -11,22 +11,22 @@
 
 Описание/Пошаговая инструкция выполнения домашнего задания:
 В этой самостоятельной работе мы ожидаем, что вы самостоятельно:
-1.	Настроите политику маршрутизации для сетей офиса.
+### 1.	Настроите политику маршрутизации для сетей офиса.
 
-Сеть: 
-VLAN 60 10.2.60.0/24 - для VPC30
-VLAN 70 10.2.70.0/24 – для VPC31
-VLAN 99 10.2.99.0./24 – сеть для управления коммутатором
+    Сеть: 
+    VLAN 60 10.2.60.0/24 - для VPC30
+    VLAN 70 10.2.70.0/24 – для VPC31
+    VLAN 99 10.2.99.0./24 – сеть для управления коммутатором
 
-2.	Распределите трафик между двумя линками с провайдером.
+### 2.	Распределите трафик между двумя линками с провайдером.
 
-Router R28(config)# access-list 1 permit 10.2.60.0 0.0.0.255
+    Router R28(config)# access-list 1 permit 10.2.60.0 0.0.0.255
 
-Router R28(config)# access-list 2 permit 10.2.70.0 0.0.0.255
+    Router R28(config)# access-list 2 permit 10.2.70.0 0.0.0.255
 
-Router R28(config)# route-map PBR_60 permit 10
+    Router R28(config)# route-map PBR_60 permit 10
 
-Router R28(config-route-map)# match ip address 1
+    Router R28(config-route-map)# match ip address 1
 
 Router R28(config-route-map)# set ip next-hop 10.2.0.21
 
