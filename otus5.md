@@ -1,4 +1,5 @@
 # Домашнее задание PBR
+## Схема:
 ![](https://github.com/tatujo2/networks/blob/main/screenshots/otus5.png)
 ## Цель: 
 ## Настроить политику маршрутизации в офисе Чокурдах
