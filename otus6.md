@@ -103,5 +103,39 @@
     router ospf 1
      area 102 filter-list prefix deny_101 in
 
+### Проверка:
+
+    R20#sh ip route
+    Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+           D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+           N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+           E1 - OSPF external type 1, E2 - OSPF external type 2
+           i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+           ia - IS-IS inter area, * - candidate default, U - per-user static route
+           o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+           a - application route
+           + - replicated route, % - next hop override
+
+    Gateway of last resort is 10.0.0.30 to network 0.0.0.0
+
+    O*E2  0.0.0.0/0 [110/1] via 10.0.0.30, 00:37:58, Ethernet0/0
+          10.0.0.0/8 is variably subnetted, 11 subnets, 2 masks
+    O IA     10.0.0.4/30 [110/30] via 10.0.0.30, 00:37:58, Ethernet0/0
+    O IA     10.0.0.8/30 [110/30] via 10.0.0.30, 00:37:58, Ethernet0/0
+    O IA     10.0.0.12/30 [110/20] via 10.0.0.30, 00:37:58, Ethernet0/0
+    O IA     10.0.0.16/30 [110/30] via 10.0.0.30, 00:37:57, Ethernet0/0
+    O IA     10.0.0.20/30 [110/30] via 10.0.0.30, 00:37:57, Ethernet0/0
+    O IA     10.0.0.24/30 [110/20] via 10.0.0.30, 00:37:58, Ethernet0/0
+    C        10.0.0.28/30 is directly connected, Ethernet0/0
+    L        10.0.0.29/32 is directly connected, Ethernet0/0
+    O IA     10.0.0.32/30 [110/30] via 10.0.0.30, 00:37:57, Ethernet0/0
+    O IA     10.0.0.36/30 [110/30] via 10.0.0.30, 00:37:57, Ethernet0/0
+    O IA     10.0.0.40/30 [110/20] via 10.0.0.30, 00:37:58, Ethernet0/0
+          172.16.0.0/30 is subnetted, 2 subnets
+    O IA     172.16.0.0 [110/30] via 10.0.0.30, 00:37:58, Ethernet0/0
+    O IA     172.16.1.0 [110/20] via 10.0.0.30, 00:37:58, Ethernet0/0
+
+     
+
 ### 5.	Настройка для IPv6 повторяет логику IPv4.
 ### 6.	План работы и изменения зафиксированы в документации.
