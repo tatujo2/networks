@@ -32,15 +32,15 @@
     interface Ethernet0/0
      ip address 10.0.0.21 255.255.255.252
      ip ospf 1 area 10
-!
+    !
       interface Ethernet0/1
      ip address 10.0.0.17 255.255.255.252
      ip ospf 1 area 10
-!
+    !
     interface Ethernet0/2
      ip address 10.0.0.6 255.255.255.252
      ip ospf 1 area 10
-!
+    !
     interface Ethernet0/3
      ip address 10.0.0.14 255.255.255.252
      ip ospf 1 area 10
@@ -49,15 +49,15 @@
     interface Ethernet0/0
      ip address 10.0.0.33 255.255.255.252
      ip ospf 1 area 10
-!
+    !
     interface Ethernet0/1
      ip address 10.0.0.37 255.255.255.252
      ip ospf 1 area 10
-!
+    !
     interface Ethernet0/2
      ip address 10.0.0.26 255.255.255.252
      ip ospf 1 area 10
-!
+    !
     interface Ethernet0/3
      ip address 10.0.0.10 255.255.255.252
  ip ospf 1 area 10
