@@ -8,90 +8,90 @@
 
 ### 1. R23 и R25 находятся в зоне 2222.
 
-  R23
-  !
-  router isis 1
-   net 49.2222.0100.0200.0001.00
-  !
-  interface Loopback0
-   ip address 10.2.1.23 255.255.255.255
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/1
-   ip address 10.2.0.1 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/2
-   ip address 10.2.0.5 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
-   
-  R25
-  !
-  router isis 1
-   net 49.2222.0100.0200.0002.00
-  !
-  interface Loopback0
-   ip address 10.2.1.25 255.255.255.255
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/0
-   ip address 10.2.0.2 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/2
-   ip address 10.2.0.14 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
+    R23
+    !
+    router isis 1
+     net 49.2222.0100.0200.0001.00
+    !
+    interface Loopback0
+     ip address 10.2.1.23 255.255.255.255
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/1
+     ip address 10.2.0.1 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/2
+     ip address 10.2.0.5 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+     
+    R25
+    !
+    router isis 1
+     net 49.2222.0100.0200.0002.00
+    !
+    interface Loopback0
+     ip address 10.2.1.25 255.255.255.255
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/0
+     ip address 10.2.0.2 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/2
+     ip address 10.2.0.14 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
 
 ### 2. R24 находится в зоне 24.
 
-  R24
-  !
-  router isis 1
-   net 49.0024.0100.0200.1024.00
-  !
-  interface Loopback0
-   ip address 10.2.1.24 255.255.255.255
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/1
-   ip address 10.2.0.9 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/2
-   ip address 10.2.0.6 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
+    R24
+    !
+    router isis 1
+     net 49.0024.0100.0200.1024.00
+    !
+    interface Loopback0
+     ip address 10.2.1.24 255.255.255.255
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/1
+     ip address 10.2.0.9 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/2
+     ip address 10.2.0.6 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
 
 ### 3. R26 находится в зоне 26.
 
-  R26
-  !
-  router isis 1
-   net 49.0026.0100.0200.1026.00
-  !
-  interface Loopback0
-   ip address 10.2.1.26 255.255.255.255
-   ip router isis 1
-   isis circuit-type level-2-only
-  !         
-  interface Ethernet0/0
-   ip address 10.2.0.10 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
-  !
-  interface Ethernet0/2
-   ip address 10.2.0.13 255.255.255.252
-   ip router isis 1
-   isis circuit-type level-2-only
- 
+    R26
+    !
+    router isis 1
+     net 49.0026.0100.0200.1026.00
+    !
+    interface Loopback0
+     ip address 10.2.1.26 255.255.255.255
+     ip router isis 1
+     isis circuit-type level-2-only
+    !         
+    interface Ethernet0/0
+     ip address 10.2.0.10 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+    !
+    interface Ethernet0/2
+     ip address 10.2.0.13 255.255.255.252
+     ip router isis 1
+     isis circuit-type level-2-only
+   
  
  
 ### Проверка
