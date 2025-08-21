@@ -3,7 +3,7 @@
 ## Цель:  Настроить IS-IS офисе Триада
 
 ## Схема: 
-![](https://github.com/tatujo2/networks/blob/main/screenshots/Otus7.png)
+![](https://github.com/tatujo2/networks/blob/main/screenshots/Otus7.PNG)
 ### 1. R23 и R25 находятся в зоне 2222.
 ### 2. R24 находится в зоне 24.
 ### 3. R26 находится в зоне 26.
