@@ -12,6 +12,7 @@
 
 ## Схема: 
 
+![](https://github.com/tatujo2/networks/blob/main/screenshots/otus10.PNG)
 
 
 ### 1. Настроите iBGP в офисом Москва между маршрутизаторами R14 и R15.
