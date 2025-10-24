@@ -10,7 +10,7 @@
 ### 6. Настроите NTP сервер на R12 и R13. Все устройства в офисе Москва должны синхронизировать время с R12 и R13.
 ### 7. Все офисы в лабораторной работе должны иметь IP связность.
 
-## Схема: ![](https://github.com/tatujo2/networks/blob/main/screenshots/otus12.PNG)
+## Схема: ![](https://github.com/tatujo2/networks/blob/main/screenshots/otus12.png)
 
 ### 1. Настроите NAT(PAT) на R14 и R15. Трансляция должна осуществляться в адрес автономной системы AS1001.
 
