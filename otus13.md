@@ -1,18 +1,16 @@
 # VPN. GRE. DmVPN
 
 ## Цель:
-
 ### 1. Настроите GRE между офисами Москва и С.-Петербург.
 ### 2. Настроите DMVMN между Москва и Чокурдах, Лабытнанги.
 
 
 ## Схема:
+![](https://github.com/tatujo2/networks/blob/main/screenshots/otus12.png)
 
 ### 1. Настроите GRE между офисами Москва и С.-Петербург.
 
-
 			R18
-
 			interface Tunnel0
 			 ip address 192.168.30.2 255.255.255.252
 			 ip mtu 1400
@@ -22,9 +20,7 @@
 			 
 			ip route 10.0.0.0 255.255.0.0 192.168.30.1
 
-
 			R15
-
 			interface Tunnel0
 			 ip address 192.168.30.1 255.255.255.252
 			 ip mtu 1400
@@ -34,10 +30,9 @@
 
 			ip route 10.1.0.0 255.255.0.0 192.168.30.2
 
-### Проверка
+### Проверка:
 
 			VPC8> ping 10.0.10.3 
-
 			84 bytes from 10.0.10.3 icmp_seq=1 ttl=59 time=5.066 ms
 			84 bytes from 10.0.10.3 icmp_seq=2 ttl=59 time=4.768 ms
 			84 bytes from 10.0.10.3 icmp_seq=3 ttl=59 time=5.975 ms
@@ -54,7 +49,6 @@
 			 6   *10.0.10.3   9.350 ms (ICMP type:3, code:3, Destination port unreachable)
 
 			VPC1> ping 10.1.40.3
-
 			84 bytes from 10.1.40.3 icmp_seq=1 ttl=59 time=6.844 ms
 			84 bytes from 10.1.40.3 icmp_seq=2 ttl=59 time=5.090 ms
 			84 bytes from 10.1.40.3 icmp_seq=3 ttl=59 time=4.208 ms
@@ -71,9 +65,7 @@
 			 6   *10.1.40.3   4.715 ms (ICMP type:3, code:3, Destination port unreachable)
 
 
-
 ### 2. Настроите DMVMN между Москва и Чокурдах, Лабытнанги.
-
 
 			R14
 			interface Tunnel0
@@ -111,8 +103,7 @@
 			 tunnel mode gre multipoint
 			 tunnel key 999
 
-### Проверка
-
+### Проверка:
 
 			R14#ping 172.16.55.2
 			Type escape sequence to abort.
